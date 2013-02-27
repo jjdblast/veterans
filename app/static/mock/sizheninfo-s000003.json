@@ -1,0 +1,9 @@
+{
+    "patientID" : "s000003",
+    "patientName" : "3号病人",
+    "faceColor" : "面色白",
+    "tongueColor" : "舌色淡红",
+    "pulseName" : "滑脉",
+    "connectedState" : true,
+    "connectedAddInfoID" : "a000003"
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "patientID" : "s000001",
+        "patientName" : "1号病人",
+        "connectedState" : false,
+        "connectedAddinfoID" : null
+    },
+    {
+        "patientID" : "s000002",
+        "patientName" : "2号病人",
+        "connectedState" : true,
+        "connectedAddinfoID" : "a000002"
+    },
+    {
+        "patientID" : "s000003",
+        "patientName" : "3号病人",
+        "connectedState" : true,
+        "connectedAddinfoID" : "a000003"
+    }
+]

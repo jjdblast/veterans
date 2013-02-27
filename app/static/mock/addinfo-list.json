@@ -1,0 +1,14 @@
+[
+    {
+        "patientID" : "a000001",
+        "patientName" : "1号病人"
+    },
+    {
+        "patientID" : "a000002",
+        "patientName" : "2号病人"
+    },
+    {
+        "patientID" : "a000003",
+        "patientName" : "3号病人"
+    }
+]

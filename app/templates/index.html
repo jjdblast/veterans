@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="utf-8">
+<title>道生四诊数据挖掘服务系统原型设计</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="yanshixing">
+
+<!-- Le styles -->
+<link href="static/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-family: Verdana, "Microsoft YaHei", Tahoma, Helvetica, sans-serif, SimSun, Arial;
+}
+.sidebar-nav {
+    padding: 9px 0;
+}
+</style>
+<link href="static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="static/lib/jqplot/jquery.jqplot.css" rel="stylesheet" />
+
+<!-- for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="static/lib/html5.js"></script>
+<script src="static/lib/excanvas.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">道生四诊数据挖掘服务系统</a>
+
+            <div class="nav-collapse collapse">
+                <p class="navbar-text pull-right">
+                    <a href="#" class="navbar-link">用户登录</a>
+                </p>
+                <ul class="nav">
+                    <li class="active"><a href="#">功能菜单</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li><a href="#">欢迎页</a></li>
+                    <li class="nav-header">系统管理</li>
+                    <li><a href="#">用户管理</a></li>
+                    <li><a href="#">数据导入</a></li>
+                    <li><a href="#">数据导出</a></li>
+                    <li class="nav-header">数据管理</li>
+                    <li><a href="#/sizheninfo-list-view">四诊数据</a></li>
+                    <li><a href="#/addinfo-list-view">补充数据</a></li>
+                    <li class="nav-header">分析挖掘</li>
+                    <li><a href="#/analysis-sample-view/plotPhysique">体质分布分析</a></li>
+                    <li><a href="#/analysis-sample-view/medicineBasic">医疗信息基本分析</a></li>
+                    <li><a href="#/analysis-sample-view/healthBasic">健康信息基本分析</a></li>
+                    <li><a href="#/analysis-sample-view">体质分布分析</a></li>
+                    <li><a href="#/analysis-sample-view">体质分布分析</a></li>
+                </ul>
+            </div><!--/.well -->
+        </div><!--/span-->
+    <div class="span9">
+        <div class="hero-unit" ng-view>
+        </div>
+    </div><!--/span-->
+</div><!--/row-->
+
+<hr>
+
+<footer>
+<p>© Tongji University LeVis Group 2012</p>
+</footer>
+
+</div><!--/.fluid-container-->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="static/lib/jquery.js"></script>
+<script src="static/lib/jqplot/jquery.jqplot.min.js"></script>
+<script src="static/lib/jqplot/plugins/jqplot.barRenderer.min.js"></script>
+<script src="static/lib/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
+<script src="static/lib/jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+<script src="static/lib/jqplot/plugins/jqplot.pointLabels.min.js"></script>
+<script src="static/lib/jqplot/plugins/jqplot.highlighter.min.js"></script>
+<script src="static/lib/jqplot/plugins/jqplot.enhancedLegendRenderer.min.js"></script>
+<script src="static/lib/syntaxhighlighter/scripts/shCore.min.js"></script>
+<script src="static/lib/syntaxhighlighter/scripts/shBrushJScript.min.js"></script>
+<script src="static/lib/syntaxhighlighter/scripts/shBrushXml.min.js"></script>
+
+<script src="static/lib/bootstrap/js/bootstrap.js"></script>
+<script src="static/lib/angular/angular.js"></script>
+<script src="static/lib/angular/angular-resource.js"></script>
+<script src="static/js/analysis-sample.js"></script>
+<script src="static/js/app.js"></script>
+<script src="static/js/services.js"></script>
+<script src="static/js/controllers.js"></script>
+<script src="static/js/filters.js"></script>
+<script src="static/js/directives.js"></script>
+
+
+
+</body>
+</html>

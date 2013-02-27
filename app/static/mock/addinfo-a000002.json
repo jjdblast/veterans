@@ -1,0 +1,7 @@
+{
+    "patientID" : "a000002",
+    "patientName" : "2号病人",
+    "chronics" : "高血压,糖尿病",
+    "habits" : "好吃,懒做",
+    "intervention" : "中成药,运动导引"
+}
