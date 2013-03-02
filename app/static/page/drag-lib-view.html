@@ -1,0 +1,25 @@
+<table class="table table-striped  table-hover table-bordered">
+    <caption>{{sizheninfo.patientName}}的四诊信息</caption>
+    <thead>
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>面色</th>
+            <th>舌色</th>
+            <th>脉名</th>
+            <th>是否关联</th>
+            <th ng-show="sizheninfo.connectedAddInfoID">关联补充信息</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{sizheninfo.patientID}}</td>
+            <td>{{sizheninfo.patientName}}</td>
+            <td>{{sizheninfo.faceColor}}</td>
+            <td>{{sizheninfo.tongueColor}}</td>
+            <td>{{sizheninfo.pulseName}}</td>
+            <td>{{sizheninfo.connectedState | bool2cn}}</td>
+            <td ng-show="sizheninfo.connectedAddInfoID"><a href="#/addinfo-detail-view/{{sizheninfo.connectedAddInfoID}}" class="btn btn-info">{{sizheninfo.connectedAddInfoID}}</a></td>
+        </tr>
+    </tbody>
+</table>

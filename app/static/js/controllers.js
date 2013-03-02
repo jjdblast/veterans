@@ -23,6 +23,10 @@ function AddInfoDetailCtrl($scope, $routeParams, AddInfo) {
     $scope.addinfo = AddInfo.get({"patientID":$routeParams.patientID});
 }
 
+function DragLibCtrl($scope, $routeParams, AddInfo) {
+    $scope.addinfo = AddInfo.get({"patientID":$routeParams.patientID});
+}
+
 function SizhenInfoConnectCtrl($scope, $routeParams, SizhenInfo) {
     $scope.addinfoID = $routeParams.addinfoID;
 }
