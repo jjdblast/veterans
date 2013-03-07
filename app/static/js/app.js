@@ -8,7 +8,10 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
         $routeProvider.when('/welcome', {templateUrl: 'static/page/welcome.html'});
         // sizheninfo
         $routeProvider.when('/sizheninfo-list-view', {templateUrl: 'static/page/sizheninfo-list-view.html', controller: SizhenInfoListCtrl});
-        $routeProvider.when('/drag-lib-view', {templateUrl: 'static/page/drag-lib-view.html', controller: DragLibCtrl});
+        $routeProvider.when('/drugMgr', {templateUrl: 'static/page/drugMgr.html', controller: drugMgrCtrl});
+        
+        $routeProvider.when('/wdiseaseMgr', {templateUrl: 'static/page/wdiseaseMgr.html', controller: wdiseaseMgrCtrl});
+      
         $routeProvider.when('/sizheninfo-detail-view/:patientID', {templateUrl: 'static/page/sizheninfo-detail-view.html', controller: SizhenInfoDetailCtrl});
         // addinfo
         $routeProvider.when('/addinfo-list-view', {templateUrl: 'static/page/addinfo-list-view.html', controller: AddInfoListCtrl});
