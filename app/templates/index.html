@@ -1,122 +1,255 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
-<head>
-<meta charset="utf-8">
-<title>中医临床资源信息挖掘平台</title> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="yanshixing">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- Le styles -->
-<link href="static/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-<style type="text/css">
-body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    font-family: Verdana, "Microsoft YaHei", Tahoma, Helvetica, sans-serif, SimSun, Arial;
-}
-.sidebar-nav {
-    padding: 9px 0;
-}
-</style>
-<link href="static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-<link href="static/lib/jqplot/jquery.jqplot.css" rel="stylesheet" />
+    <!-- Le styles -->
+    <link href="static/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="static/lib/bootstrap/css/app.css" rel="stylesheet" type="text/css" /> 
+    <style  type="text/css">
+   body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+    } 
+    </style>
 
-<!-- for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-<script src="static/lib/html5.js"></script>
-<script src="static/lib/excanvas.js"></script>
-<![endif]-->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="static/lib/bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
 
-</head>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/lib/bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/lib/bootstrap/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/lib/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="static/lib/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="static/lib/bootstrap/ico/favicon.png">
+  </head>
 
-<body>
+  <body>
+ <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">中医临床信息挖掘平台</a>
-
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">中医临床资源信息挖掘平台</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
-                <p class="navbar-text pull-right">
-                    <a href="#" class="navbar-link">用户登录</a>
-                </p>
-                <ul class="nav">
-                    <li class="active"><a href="#">功能菜单</a></li>
-                    <li><a href="#about">关于我们</a></li>
-                    <li><a href="#contact">联系我们</a></li>
-                </ul>
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div><!--/.nav-collapse -->
-        </div>
-    </div>
-</div>
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
 
-<div class="container-fluid">
-    <div class="row-fluid">
-        <div class="span3">
-            <div class="well sidebar-nav">
-                <ul class="nav nav-list">
-                    <li><a href="#">欢迎页</a></li>
-                    <li class="nav-header">基础数据维护</li>
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="static/lib/bootstrap/img/examples/lib1.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>强大的数据库</h1>
+              <p class="lead">每一位用户都有我们历时几年总结的强大数据库做后盾</p>
+              <a class="btn btn-large btn-primary" href="#">更多信息</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="static/lib/bootstrap/img/examples/lib2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>精准的定位</h1>
+              <p class="lead">我们出色的算法使用户不再徘徊不前</p>
+              <a class="btn btn-large btn-primary" href="#">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="static/lib/bootstrap/img/examples/med.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>专业的医疗团队</h1>
+              <p class="lead">同济大学的专业医疗数据挖掘团队使诊断更加权威</p>
+              <a class="btn btn-large btn-primary" href="#">查看简介</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+   <div class="container marketing">
+
+   <div class="row-fluid marketing">
+        <div class="span6">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"      href="#collapseOne">国土问题</a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse in">
+                <div class="accordion-inner">
                     <li><a href="#/drugMgr">药品库</a></li>
-                    <li><a href="#">处方库</a></li>
-                    <li><a href="#">中医疾病维护</a></li>
+                    <li><a href="#/fixedrecipeMgr">处方库</a></li>
+                    <li><a href="#/cdiseaseMgr">中医疾病维护</a></li>
                     <li><a href="#/wdiseaseMgr">西医疾病维护</a></li>
-                    <li><a href="#/addinfo-list-view">症候库维护</a></li>
-                    <li><a href="#/analysis-sample-view/plotPhysique">治法库维护</a></li>
-                    <li><a href="#/analysis-sample-view/medicineBasic">症状库维护</a></li>
-                    <li><a href="#/analysis-sample-view/healthBasic">问诊模板维护</a></li>
-                    <li><a href="#/analysis-sample-view">检查项目维护</a></li>
-                    <li><a href="#/analysis-sample-view"></a></li>
-                </ul>
-            </div><!--/.well -->
-        </div><!--/span-->
-    <div class="span9">
-        <div class="hero-unit" ng-view>
-        这里是中医临床资源信息挖掘平台的首页
+                    <li><a href="#/semioticMgr">症候库维护</a></li>
+                    <li><a href="#/dmethodMgr">治法库维护</a></li>
+                    <li><a href="#/symptomMgr">症状库维护</a></li>
+                    <li><a href="#dtemplateMgr">问诊模板维护</a></li>
+                    <li><a href="#/examinationMgr">检查项目维护</a></li>
+                </div>
+              </div>
+            </div>
+          
+         <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"      href="#collapseThree">国土问题</a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse in">
+                <div class="accordion-inner">
+		  前一段时间一个段子说，某国的网民在因国土问题与中国网民争吵时说，我要打到北京，中国的网民非常淡然地回应，就你那经济水平，交得起过路费吗？这两天新的段子说，李白要是活在今天的话，估计一大半以上他的诗根本写不出来，因为名山大川的门票他根本买不起。
+                </div>
+              </div>
+          </div>
+
+         <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"      href="#collapseFive">国土问题</a>
+              </div>
+              <div id="collapseFive" class="accordion-body collapse in">
+                <div class="accordion-inner">
+		  前一段时间一个段子说，某国的网民在因国土问题与中国网民争吵时说，我要打到北京，中国的网民非常淡然地回应，就你那经济水平，交得起过路费吗？这两天新的段子说，李白要是活在今天的话，估计一大半以上他的诗根本写不出来，因为名山大川的门票他根本买不起。
+                </div>
+              </div>
+          </div>
         </div>
-    </div><!--/span-->
-</div><!--/row-->
 
-<hr>
+        <div class="span6">
+             <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"      href="#collapseTwo">国土问题</a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse in">
+                <div class="accordion-inner">
+		  前一段时间一个段子说，某国的网民在因国土问题与中国网民争吵时说，我要打到北京，中国的网民非常淡然地回应，就你那经济水平，交得起过路费吗？这两天新的段子说，李白要是活在今天的话，估计一大半以上他的诗根本写不出来，因为名山大川的门票他根本买不起。
+                </div>
+              </div>
+            </div>
+        <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"      href="#collapseFour">国土问题</a>
+              </div>
+              <div id="collapseFour" class="accordion-body collapse in">
+                <div class="accordion-inner">
+		  前一段时间一个段子说，某国的网民在因国土问题与中国网民争吵时说，我要打到北京，中国的网民非常淡然地回应，就你那经济水平，交得起过路费吗？这两天新的段子说，李白要是活在今天的话，估计一大半以上他的诗根本写不出来，因为名山大川的门票他根本买不起。
+                </div>
+              </div>
+          </div>
 
-<footer>
-<p>© Tongji University LeVis Group 2012</p>
-</footer>
+         <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"      href="#collapseSix">国土问题</a>
+              </div>
+              <div id="collapseSix" class="accordion-body collapse in">
+                <div class="accordion-inner">
+		  前一段时间一个段子说，某国的网民在因国土问题与中国网民争吵时说，我要打到北京，中国的网民非常淡然地回应，就你那经济水平，交得起过路费吗？这两天新的段子说，李白要是活在今天的话，估计一大半以上他的诗根本写不出来，因为名山大川的门票他根本买不起。
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
 
-</div><!--/.fluid-container-->
+      <!-- START THE FEATURETTES -->
 
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="static/lib/jquery.js"></script>
-<script src="static/lib/jqplot/jquery.jqplot.min.js"></script>
-<script src="static/lib/jqplot/plugins/jqplot.barRenderer.min.js"></script>
-<script src="static/lib/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
-<script src="static/lib/jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
-<script src="static/lib/jqplot/plugins/jqplot.pointLabels.min.js"></script>
-<script src="static/lib/jqplot/plugins/jqplot.highlighter.min.js"></script>
-<script src="static/lib/jqplot/plugins/jqplot.enhancedLegendRenderer.min.js"></script>
-<script src="static/lib/syntaxhighlighter/scripts/shCore.min.js"></script>
-<script src="static/lib/syntaxhighlighter/scripts/shBrushJScript.min.js"></script>
-<script src="static/lib/syntaxhighlighter/scripts/shBrushXml.min.js"></script>
+      <hr class="featurette-divider">
 
-<script src="static/lib/bootstrap/js/bootstrap.js"></script>
-<script src="static/lib/angular/angular.js"></script>
-<script src="static/lib/angular/angular-resource.js"></script>
-<script src="static/js/analysis-sample.js"></script>
-<script src="static/js/app.js"></script>
-<script src="static/js/services.js"></script>
-<script src="static/js/controllers.js"></script>
-<script src="static/js/filters.js"></script>
-<script src="static/js/directives.js"></script>
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="static/lib/bootstrap/img/examples/browser-icon-chrome.jpg">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
 
 
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
 
-</body>
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/lib/bootstrap/js/jquery.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-button.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="static/lib/bootstrap/js/holder/holder.js"></script>
+  </body>
 </html>
+

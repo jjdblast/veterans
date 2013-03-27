@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="static/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="static/lib/bootstrap/css/app.css" rel="stylesheet" type="text/css">
+     <!-- Loading Flat UI -->
+    <link href="static/lib/FlatUI/css/flat-ui.css" rel="stylesheet" type="text/css"> 
+    <link rel="shortcut icon" href="static/lib/FlatUI/images/favicon.ico">
+    <style  type="text/css">
+   body {
+      padding-bottom: 40px;
+      color: #5a5a5a;
+  }
+
+   
+    </style>
+    <link href="static/lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="static/lib/jqplot/jquery.jqplot.css" rel="stylesheet" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="static/lib/bootstrap/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+  </head>
+
+  <body>
+ <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">中医临床资源信息挖掘平台</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="static/lib/bootstrap/img/examples/lib1.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>强大的数据库</h1>
+              <p class="lead">每一位用户都有我们历时几年总结的强大数据库做后盾</p>
+              <a class="btn btn-large btn-primary" href="#">更多信息</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="static/lib/bootstrap/img/examples/lib2.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>精准的定位</h1>
+              <p class="lead">我们出色的算法使用户不再徘徊不前</p>
+              <a class="btn btn-large btn-primary" href="#">了解更多</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="static/lib/bootstrap/img/examples/med.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>专业的医疗团队</h1>
+              <p class="lead">同济大学的专业医疗数据挖掘团队使诊断更加权威</p>
+              <a class="btn btn-large btn-primary" href="#">查看简介</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3 bs-docs-sidebar">
+             <div class="todo mrm">
+            <ul>
+              <li class="todo-done">
+                <div class="todo-icon fui-man-24"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Meet <strong>Adrian</strong> at <strong>6pm</strong>
+                  </h4>
+                  Times Square
+                </div>
+              </li>
+
+              <li>
+                <div class="todo-icon fui-menu-24"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Chat with <strong>V.Kudinov</strong>
+                  </h4>
+                  Skype conference an 9 am
+                </div>
+              </li>
+
+              <li>
+                <div class="todo-icon fui-eye-24"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Watch <strong>Iron Man</strong>
+                  </h4>
+                  1998 Broadway
+                </div>
+              </li>
+
+              <li>
+                <div class="todo-icon fui-time-24"></div>
+                <div class="todo-content">
+                  <h4 class="todo-name">
+                    Fix bug on a <strong>Website</strong>
+                  </h4>
+                  As soon as possible
+                </div>
+              </li>
+          </ul>
+      </div>
+      </div>
+                  
+      <div class="span9">
+        <div class="hero-unit" ng-view>
+        这里是中医临床资源信息挖掘平台的首页
+        </div>
+      </div>
+    
+    <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <div class="span9">
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="static/lib/bootstrap/img/examples/browser-icon-chrome.jpg">
+        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/lib/bootstrap/js/jquery.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-transition.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-alert.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-modal.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-scrollspy.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-tab.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-popover.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-button.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-carousel.js"></script>
+    <script src="static/lib/bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="static/lib/jqplot/jquery.jqplot.min.js"></script>
+    <script src="static/lib/jqplot/plugins/jqplot.barRenderer.min.js"></script>
+    <script src="static/lib/jqplot/plugins/jqplot.pieRenderer.min.js"></script>
+    <script src="static/lib/jqplot/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+    <script src="static/lib/jqplot/plugins/jqplot.pointLabels.min.js"></script>
+    <script src="static/lib/jqplot/plugins/jqplot.highlighter.min.js"></script>
+    <script src="static/lib/jqplot/plugins/jqplot.enhancedLegendRenderer.min.js"></script>
+    <script src="static/lib/syntaxhighlighter/scripts/shCore.min.js"></script>
+    <script src="static/lib/syntaxhighlighter/scripts/shBrushJScript.min.js"></script>
+    <script src="static/lib/syntaxhighlighter/scripts/shBrushXml.min.js"></script>
+
+    <script src="static/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="static/lib/angular/angular.js"></script>
+    <script src="static/lib/angular/angular-resource.js"></script>
+    <script src="static/js/analysis-sample.js"></script>
+    <script src="static/js/app.js"></script>
+    <script src="static/js/services.js"></script>
+    <script src="static/js/controllers.js"></script>
+    <script src="static/js/filters.js"></script>
+    <script src="static/js/directives.js"></script>
+
+   
+    <script src="static/lib/FlatUI/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="static/lib/FlatUI/js/jquery.dropkick-1.0.0.js"></script>
+    <script src="static/lib/FlatUI/js/custom_checkbox_and_radio.js"></script>
+    <script src="static/lib/FlatUI/js/custom_radio.js"></script>
+    <script src="static/lib/FlatUI/js/jquery.tagsinput.js"></script>
+    <script src="static/lib/FlatUI/js/jquery.placeholder.js"></script>
+    <script src="static/lib/FlatUI/js/application.js"></script>
+    <!--[if lt IE 8]>
+      <script src="js/icon-font-ie7.js"></script>
+      <script src="js/icon-font-ie7-24.js"></script>
+    <![endif]-->
+    
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="static/lib/bootstrap/js/holder/holder.js"></script>
+  </body>
+</html>
+

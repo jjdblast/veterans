@@ -6,20 +6,26 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
     config(['$routeProvider', function($routeProvider) {
         // welcome
         $routeProvider.when('/welcome', {templateUrl: 'static/page/welcome.html'});
-        // sizheninfo
-        $routeProvider.when('/sizheninfo-list-view', {templateUrl: 'static/page/sizheninfo-list-view.html', controller: SizhenInfoListCtrl});
+        // sizheninfo   
         $routeProvider.when('/drugMgr', {templateUrl: 'static/page/drugMgr.html', controller: drugMgrCtrl});
         
+        $routeProvider.when('/fixedrecipeMgr', {templateUrl: 'static/page/fixedrecipeMgr.html', controller:fixedrecipeMgrCtrl});
+        
         $routeProvider.when('/wdiseaseMgr', {templateUrl: 'static/page/wdiseaseMgr.html', controller: wdiseaseMgrCtrl});
-      
-        $routeProvider.when('/sizheninfo-detail-view/:patientID', {templateUrl: 'static/page/sizheninfo-detail-view.html', controller: SizhenInfoDetailCtrl});
+       
+        $routeProvider.when('/cdiseaseMgr', {templateUrl: 'static/page/cdiseaseMgr.html', controller: cdiseaseMgrCtrl});
+        
+        $routeProvider.when('/semioticMgr', {templateUrl: 'static/page/semioticMgr.html', controller: semioticMgrCtrl});
         // addinfo
-        $routeProvider.when('/addinfo-list-view', {templateUrl: 'static/page/addinfo-list-view.html', controller: AddInfoListCtrl});
-        $routeProvider.when('/addinfo-detail-view/:patientID', {templateUrl: 'static/page/addinfo-detail-view.html', controller: AddInfoDetailCtrl});
+        $routeProvider.when('/dmethodMgr', {templateUrl: 'static/page/dmethodMgr.html', controller: dmethodMgrCtrl});
+        
+        $routeProvider.when('/symptomMgr', {templateUrl: 'static/page/symptomMgr.html', controller: symptomMgrCtrl});
         // sizhen connect action
-        $routeProvider.when('/sizheninfo-connect-view/:sizheninfoID/:addinfoID', {templateUrl: 'static/page/sizheninfo-connect-view.html', controller: SizhenInfoConnectCtrl});
-        $routeProvider.when('/sizheninfo-connect-selection-view', {templateUrl: 'static/page/sizheninfo-connect-selection-view.html', controller: AddInfoListCtrl});
-        // analysis sample
+        
+        $routeProvider.when('/dtemplateMgr', {templateUrl: 'static/page/dtemplateMgr.html', controller: dtemplateMgrCtrl});
+        
+        $routeProvider.when('/examinationMgr', {templateUrl: 'static/page/examinationMgr.html', controller: examinationMgrCtrl});
+       
         $routeProvider.when('/analysis-sample-view/:analysisType', {templateUrl: 'static/page/analysis-sample-view.html', controller: AnalysisSampleCtrl});
         // otherwise
         $routeProvider.otherwise({redirectTo: '/welcome'});
