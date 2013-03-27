@@ -1,8 +1,7 @@
 <div class="row-fluid">
     <form class="form-search">
         <div class="span6">
-            <span class="add-on"><strong>新药品:</strong></span>
-            <button type="submit" class="btn btn-primary">添加</button>
+            <button type="submit" class="btn btn-primary">添加新药品</button>
         </div>
             <span class="badge badge-important">药品名称或代码</span>
             <span class="label label-info"></span>
@@ -29,16 +28,16 @@
         </tr>
     </thead>
     <tbody>
-            <tr ng-repeat="drugMgr_item in drug_list">
-                <td>{{drugMgr_item.name}}</td>
-                <td>{{drugMgr_item.code}}</td>
-                <td>{{drugMgr_item.unit}}</td>
-                <td>{{drugMgr_item.alias}}</td>
-                <td>{{drugMgr_item.isClassical}}</td>
-                <td>{{drugMgr_item.SPETid}}</td>
-                <td>{{drugMgr_item.py}}</td>
-                <td>{{drugMgr_item.wb}}</td>
-                <td>{{drugMgr_item.state}}</td>
+            <tr ng-repeat="drug_item in drug_list">
+                <td>{{drug_item.name}}</td>
+                <td>{{drug_item.code}}</td>
+                <td>{{drug_item.unit}}</td>
+                <td>{{drug_item.alias}}</td>
+                <td>{{drug_item.isClassical}}</td>
+                <td>{{drug_item.SPETid}}</td>
+                <td>{{drug_item.py}}</td>
+                <td>{{drug_item.wb}}</td>
+                <td>{{drug_item.state}}</td>
                 <div class="alert alert-block alert-error fade in">
                     <button class="close" data-dismiss="alert" type="button">×</button>
                     <h4 class="alert-heading">Oh snap! You got an error!</h4>
@@ -51,8 +50,8 @@
                 <div class="well">
                     <a class="btn btn-danger" data-content="他来自山东，是一名残疾人，因思想独立、指谪政弊而被政府迫害。地方政府和当权政要派专人看管他，调拨专款作为对他的看管费用，他每天都活在别人的监视和囚禁中，其遭遇只能用令人发指来形容。历尽万难，他终于成功逃离了当地，在外国使节的帮助和护送下去到了国外。他，就是孙膑。" rel="popover" href="#" data-original-title="他是谁">鼠标经过弹出提示</a>
                 </div>
-                <td><a class="btn btn-info" href="">删除</a></td>
-                <td><a class="btn btn-info" href="">删除</a></td>
+                <td><a class="btn btn-info" href="">修改</a></td>
+                <td><a class="btn btn-info" href="">详细</a></td>
                 <td><a class="btn btn-info" href="">删除</a></td>
             </tr>
         </tbody>

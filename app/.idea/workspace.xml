@@ -5,7 +5,7 @@
     <ignored path="app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index web.html" changelist="178acb78-5b3a-4651-967b-9aef1ee5b79b" time="1364313690721" ignored="false" />
-    <file path="/index.html" changelist="178acb78-5b3a-4651-967b-9aef1ee5b79b" time="1364358114292" ignored="false" />
+    <file path="/index.html" changelist="178acb78-5b3a-4651-967b-9aef1ee5b79b" time="1364381233984" ignored="false" />
     <file path="$PROJECT_DIR$/static/lib/FlatUI/css/flat-ui.css" changelist="178acb78-5b3a-4651-967b-9aef1ee5b79b" time="1364356099761" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,19 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="306" column="55" selection-start="14053" selection-end="14053" vertical-scroll-proportion="-8.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drugMgr.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/page/drugMgr.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="33" selection-start="2137" selection-end="2433" vertical-scroll-proportion="0.56405354">
+            <state line="71" column="96" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.5449331">
               <folding />
             </state>
           </provider>
@@ -55,8 +46,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index web.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/static/page/drugMgr.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -120,7 +111,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -137,8 +128,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="746" extended-state="6" />
-    <editor active="false" />
+    <frame x="-4" y="-4" width="1374" height="746" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -221,6 +212,20 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="178" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="306" column="55" selection-start="14053" selection-end="14053" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="173" column="1" selection-start="8038" selection-end="8119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -228,28 +233,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/原index/index1.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="85" selection-end="97" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="7" selection-start="85" selection-end="97" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/原index/index1.0.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="85" selection-end="97" vertical-scroll-proportion="0.03869654">
-          <folding />
-        </state>
+        <state line="4" column="7" selection-start="85" selection-end="97" vertical-scroll-proportion="0.03869654" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="306" column="55" selection-start="14053" selection-end="14053" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/page/drugMgr.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="33" selection-start="2137" selection-end="2433" vertical-scroll-proportion="0.56405354">
+        <state line="71" column="96" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.5449331">
           <folding />
         </state>
       </provider>

@@ -7,24 +7,24 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives'])
         // welcome
         $routeProvider.when('/welcome', {templateUrl: 'static/page/welcome.html'});
         // sizheninfo   
-        $routeProvider.when('/drugMgr', {templateUrl: 'static/page/drugMgr.html', controller: drugMgrCtrl});
+        $routeProvider.when('/drug', {templateUrl: 'static/page/drug.html', controller: drugCtrl});
         
-        $routeProvider.when('/fixedrecipeMgr', {templateUrl: 'static/page/fixedrecipeMgr.html', controller:fixedrecipeMgrCtrl});
+        $routeProvider.when('/fixedrecipe', {templateUrl: 'static/page/fixedrecipe.html', controller:fixedrecipeCtrl});
         
-        $routeProvider.when('/wdiseaseMgr', {templateUrl: 'static/page/wdiseaseMgr.html', controller: wdiseaseMgrCtrl});
+        $routeProvider.when('/wdisease', {templateUrl: 'static/page/wdisease.html', controller: wdiseaseCtrl});
        
-        $routeProvider.when('/cdiseaseMgr', {templateUrl: 'static/page/cdiseaseMgr.html', controller: cdiseaseMgrCtrl});
+        $routeProvider.when('/cdisease', {templateUrl: 'static/page/cdisease.html', controller: cdiseaseCtrl});
         
-        $routeProvider.when('/semioticMgr', {templateUrl: 'static/page/semioticMgr.html', controller: semioticMgrCtrl});
+        $routeProvider.when('/semiotic', {templateUrl: 'static/page/semiotic.html', controller: semioticCtrl});
         // addinfo
-        $routeProvider.when('/dmethodMgr', {templateUrl: 'static/page/dmethodMgr.html', controller: dmethodMgrCtrl});
+        $routeProvider.when('/dmethod', {templateUrl: 'static/page/dmethod.html', controller: dmethodCtrl});
         
-        $routeProvider.when('/symptomMgr', {templateUrl: 'static/page/symptomMgr.html', controller: symptomMgrCtrl});
+        $routeProvider.when('/symptom', {templateUrl: 'static/page/symptom.html', controller: symptomCtrl});
         // sizhen connect action
         
-        $routeProvider.when('/dtemplateMgr', {templateUrl: 'static/page/dtemplateMgr.html', controller: dtemplateMgrCtrl});
+        $routeProvider.when('/dtemplate', {templateUrl: 'static/page/dtemplate.html', controller: dtemplateCtrl});
         
-        $routeProvider.when('/examinationMgr', {templateUrl: 'static/page/examinationMgr.html', controller: examinationMgrCtrl});
+        $routeProvider.when('/examination', {templateUrl: 'static/page/examination.html', controller: examinationCtrl});
        
         $routeProvider.when('/analysis-sample-view/:analysisType', {templateUrl: 'static/page/analysis-sample-view.html', controller: AnalysisSampleCtrl});
         // otherwise
